@@ -50,7 +50,7 @@ The program includes 3 services:
 >
 > Each Pixel must have at least 1 gene from parent, and Its set of gene must be uniqueness.
 >
-> We will have many growth periods (3 seconds interval), each period will pick 50% of total Pixel population for > pairing.
+> We will have many growth periods (3 seconds interval), each period will pick 50% of total Pixel population for pairing.
 >
 > I used a hash data structure for storing a pixel gene, only a new pixel with not duplicate gene be stored to the storage.
 >
