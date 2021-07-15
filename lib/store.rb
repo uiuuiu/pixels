@@ -1,4 +1,6 @@
 module Store
+  # MAX_POPULATIONS = 773232 # 1068 x 724
+  MAX_POPULATIONS = 1000
   class << self
     attr_accessor :populations
 
