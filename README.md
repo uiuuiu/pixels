@@ -1,24 +1,25 @@
-# README
+# How to run
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. run bundle:
+    ```bash
+    bundle install
+    ```
 
-Things you may want to cover:
+2. run Message queue program:
+    - Open a new terminal then run:
+        ```bash
+        redis-server
+        ```
+    - Open a new terminal then run:
+        ```bash
+        bundle exec sidekiq
+        ```
 
-* Ruby version
+3. run daemon:
+    ```bash
+    god -c path_to_workspace/daemons/pixels_generator.god
+    ```
 
-* System dependencies
+4. Check the daemon log `pixels_generator.log` in `path_to_workspace/log/`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+5. check the activejob log `development.log` in `path_to_workspace/log/`
